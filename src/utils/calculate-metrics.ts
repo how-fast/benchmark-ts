@@ -16,7 +16,7 @@ export function calculateMetrics(values: number[]): Metrics {
   const sorted = values.sort((a, b) => a - b);
   const max = sorted[sorted.length - 1];
   const min = sorted[0];
-  const median = sorted[Math.ceil(sorted.length / 2)];
+  const median = sorted[Math.floor(sorted.length / 2)];
   const total = sorted.reduce((prev, sum) => prev + sum, 0);
   const mean = total / sorted.length;
 

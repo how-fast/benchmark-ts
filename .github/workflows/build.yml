@@ -23,4 +23,6 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: built-package
-          path: ${{ github.workspace }}/**
+          path: |
+            ${{ github.workspace }}/**
+            !${{ github.workspace }}/node_modules

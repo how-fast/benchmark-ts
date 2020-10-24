@@ -9,6 +9,7 @@ interface Input<I> {
 }
 
 type OptionFunction<I> = (i: I) => void;
+
 type OptionId = string;
 
 interface Option<I> {
